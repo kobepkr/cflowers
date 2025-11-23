@@ -1,9 +1,9 @@
 .text-primary {
-    color: #FED136;
+    color: #0000FF;
 }
 
 a {
-    color: #FED136;
+    color: #0000FF;
 }
 
 a:hover,
@@ -15,8 +15,8 @@ a.active {
 }
 
 .btn-primary {
-    border-color: #FED136;
-    background-color: #FED136;
+    border-color: #0000FF;
+    background-color: #0000FF;
 }
 
 .btn-primary:hover,
@@ -42,17 +42,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #FED136;
-    background-color: #FED136;
+    border-color: #0000FF;
+    background-color: #0000FF;
 }
 
 .btn-primary .badge {
-    color: #FED136;
+    color: #0000FF;
 }
 
 .btn-xl {
-    border-color: #FED136;
-    background-color: #FED136;
+    border-color: #0000FF;
+    background-color: #0000FF;
 }
 
 .btn-xl:hover,
@@ -79,147 +79,147 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #FED136;
-    background-color: #FED136;
+    border-color: #0000FF;
+    background-color: #0000FF;
 }
 
 .btn-xl .badge {
-    color: #FED136;
+    color: #0000FF;
     background-color: #fff;
 }
 
 
 .navbar-default .navbar-brand {
-    color: #FED136;
+    color: #0000FF;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #FED136;
+    color: #0000FF;
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #FED136;
-    background-color: #FED136;
+    border-color: #0000FF;
+    background-color: #0000FF;
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #FED136;
+    color: #0000FF;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #FED136;
+    background-color: #0000FF;
 }
 
 .navbar-default .navbar-nav>.active>a {
-    background-color: #FED136;
+    background-color: #0000FF;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    background-color: #FED136;
+    background-color: #0000FF;
 }
 
 .menu-wrap a:hover,
 .menu-wrap a:focus {
-	color: #FED136;
+	color: #0000FF;
 }
 
 .menu-wrap .logo {
-    color: #FED136;
+    color: #0000FF;
 }
 
 .menu-button {
-    background: #FED136;
+    background: #0000FF;
 }
 
 .header .intro-text h1 span {
-    color: #FED136;
+    color: #0000FF;
 }
 
 .main-title strong {
-    color: #FED136;
+    color: #0000FF;
 }
 
 .feature i {
-    background: #FED136;
+    background: #0000FF;
 }
 
 .no-touch .feature:hover i,
 	.no-touch .feature:active i,
 	.no-touch .feature:focus i {
         
-        box-shadow: 0 0 0 0 #FED136;
+        box-shadow: 0 0 0 0 #0000FF;
 }
 
 .feature-2 i {
-    background: #FED136;
-    border: 1px solid #FED136;
+    background: #0000FF;
+    border: 1px solid #0000FF;
 }
 
 .feature-2:hover i {
     background: transparent;
-    color: #FED136;
+    color: #0000FF;
 }
 
 .feature-2:hover .border {
-    border-color: #FED136;
+    border-color: #0000FF;
 }
 
 .feature-3 i {
-    color: #FED136;
-    border: 1px solid #FED136;
+    color: #0000FF;
+    border: 1px solid #0000FF;
 }
 
 .feature-3:hover i {
-    background: #FED136;
+    background: #0000FF;
     color: #fff;
 }
 
 .feature-3:hover .border {
-    border-color: #FED136;
+    border-color: #0000FF;
 }
 
 .portfolio-caption a i {
-    color: #FED136;
+    color: #0000FF;
 }
 .portfolio-item:hover .portfolio-caption {
     background-color: rgba(254, 209, 54, 0.8);
 }
 
 .welcome-section:hover .border {
-    border-color: #FED136;
+    border-color: #0000FF;
 }
 
 .welcome-section:hover h4 {
-    color: #FED136;
+    color: #0000FF;
 }
 
 .about-text li i {
-    color: #FED136;
+    color: #0000FF;
 }
 
 .about-us-section-2 .carousel-indicators li,
 .project-image .carousel-indicators li {
-	border: 2px solid #FED136 !important;
+	border: 2px solid #0000FF !important;
 }
 
 .about-us-section-2 .carousel-indicators .active,
 .project-image .carousel-indicators .active {
-	background-color: #FED136;
+	background-color: #0000FF;
 }
 
 .owl-theme .owl-controls .owl-buttons div {
-	background: #FED136;
+	background: #0000FF;
 }
 
 #team-section .nav-tabs.nav-justified {
-    background: #FED136;
+    background: #0000FF;
 }
 
 .team-member .team-details {
@@ -227,58 +227,58 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .counter-item i {
-    color: #FED136;
+    color: #0000FF;
 }
 .timer {
-    color: #FED136;
+    color: #0000FF;
 }
 .latest-post h4 {
-    color: #FED136;
+    color: #0000FF;
 }
 .latest-post .post-details li i {
-    color: #FED136;
+    color: #0000FF;
 }
 .testimonials .testimonial-content img {
-    border: 3px solid #FED136;
+    border: 3px solid #0000FF;
 }
 .testimonials .testimonial-author .author {
-    color: #FED136;
+    color: #0000FF;
 }
 .testimonials-carousel .owl-controls.clickable .owl-buttons div{
-	color: #FED136;
+	color: #0000FF;
 }
 .owl-theme .owl-controls .owl-page.active{
-    background-color: #FED136;
+    background-color: #0000FF;
 }
 
 .contact .form-control:focus {
-    border-color: #FED136;
+    border-color: #0000FF;
     box-shadow: none;
 }
 
 footer.style-1 .footer-social li a {
-    background: #FED136;
+    background: #0000FF;
 }
 
 .call-to-action h1 strong {
-    color: #FED136;   
+    color: #0000FF;   
 }
 
 .team-details li a {
-    background: #FED136;
+    background: #0000FF;
 }
 
 .progress-bar {
-    background: #FED136;
+    background: #0000FF;
 }
 
 
 .pricing-tables .pricing-table.highlight-plan .plan-name {
-    background: #FED136;
+    background: #0000FF;
 }
 
 .pricing-tables .pricing-table.highlight-plan .plan-signup {
-    background: #FED136;
+    background: #0000FF;
 }
 
 .footer-contact-info {
@@ -286,11 +286,11 @@ footer.style-1 .footer-social li a {
 }
 
 footer.style-1 {
-    border-top: 2px solid #FED136;
+    border-top: 2px solid #0000FF;
 }
 
 #main-slide .slider-content h1 strong {
-    color: #FED136;
+    color: #0000FF;
 }
 
 .latest-post .post-details .date {
@@ -298,17 +298,17 @@ footer.style-1 {
 }
 
 .custom-tab .nav-tabs.nav-justified {
-    background: #FED136;
+    background: #0000FF;
 }
 
 .plan-name {
-    background: #FED136;
+    background: #0000FF;
 }
 
 .plan-signup {
-    background: #FED136;
+    background: #0000FF;
 }
 
 .dot1, .dot2 {
-    background-color: #FED136;
+    background-color: #0000FF;
 }
