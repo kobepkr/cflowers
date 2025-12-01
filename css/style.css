@@ -1935,12 +1935,24 @@ iframe {
     width: 40px !important;
     height: 40px !important;
     max-width: none !important;
+    margin-top: 10px;
+}
+
+/*Proporciones para elofo full mantener*/
+.logo-full{
+    width: 380px !important;
+    height: 410px !important;
+    max-width: none !important;
+    margin-top: 10px;
+    padding-bottom: 10%;
 }
 .feature-section .row {
     display: flex;
     flex-wrap: nowrap; /* NO saltar a otra línea */
     overflow-x: auto;  /* si no caben, aparece scroll horizontal */
 }
+
+
 
 
 /******* Style Loader *******/
