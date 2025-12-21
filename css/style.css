@@ -2071,3 +2071,9 @@ iframe {
 
 
 
+.portfolio-caption .logo-levis {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    height: 40px;   /* ajusta aquí */
+    width: auto;
+}
