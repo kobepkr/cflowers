@@ -972,6 +972,7 @@ and (min-width : 551px){
    
 }
 
+
 .portfolio-caption {
     
    width: 100%;
@@ -2023,5 +2024,50 @@ iframe {
         -webkit-transform: scale(1.0);
       }
 }
+
+
+/* Contenedor del overlay */
+.portfolio-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centra vertical */
+    align-items: center;     /* centra horizontal */
+}
+
+/* Logo de la marca más abajo */
+.portfolio-caption .brand-logo {
+    margin-top: 40px;   /* baja el logo */
+    margin-bottom: 80px;
+    height: 80px;
+}
+
+/* Ícono centrado */
+.portfolio-caption .link-center i {
+    position: static;   /* quita position absolute anterior */
+    margin: 0;
+}
+
+
+.producto-sin-stock {
+    position: relative;
+}
+
+.producto-img {
+    width: 100%;
+}
+
+.agotado-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* usa cover si quieres que recorte */
+    pointer-events: none;
+}
+.producto-item {
+    margin-bottom: 30px;
+}
+
 
 
