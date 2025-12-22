@@ -2074,6 +2074,38 @@ iframe {
 .portfolio-caption .logo-levis {
     margin-top: 40px;
     margin-bottom: 80px;
-    height: 40px;   /* ajusta aquí */
+    height: 100px;   /* ajusta aquí */
     width: auto;
+}
+
+
+.footer-social {
+    background-color: #000;
+    padding: 15px 0;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-social li a {
+    background-color: #000 !important;
+    display: inline-block;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.footer-social li a:hover {
+    background-color: #000;
+}
+
+.footer-social img {
+    display: block;
 }
