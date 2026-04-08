@@ -2109,3 +2109,42 @@ iframe {
 .footer-social img {
     display: block;
 }
+.portfolio-item img {
+    width: 100%;
+    height: 700px;       /* ajusta este valor si quieres más alto o bajo */
+    object-fit: cover;   /* recorta la imagen sin deformarla */
+}
+
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 10px;
+}
+#modal-dockers .producto-item img {
+    width: 70%;
+    height: 750px;      /* ajusta: 250px, 300px, 350px */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+#modal-dockers .producto-item {
+    margin-bottom: 20px;
+}
+
+#modal-dockers .producto-item img {
+    border-radius: 10px;
+}
+.section-modal .producto-item img {
+    width: 70%;
+    height: 700px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.portfolio-caption .brand-logo {
+    height: 80px;       /* todos iguales */
+    width: auto;
+    object-fit: contain;
+}
+
+
+

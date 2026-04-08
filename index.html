@@ -208,76 +208,122 @@
     
     
     <!-- Start Feature Section -->
-        <section id="feature" class="feature-section">
+<!-- Start Marcas Section - Carrusel de Logos -->
+<!-- Start Marcas Section - Carrusel de Logos -->
+<section id="marcas">
     <div class="container">
-
-        <!-- FILA 1 -->
         <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="feature">
-                 <img src="./images/logos/logo-wados.jpeg" alt="Logo de Wados" width="85" class="logo">
-
-                    <div class="feature-content">
-                        <h4>Wados</h4>
-                        <p>"Tu estilo, tu esencia, tu WADOS"</p>
-                    </div>
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h3>Nuestras Marcas</h3>
+                    <p>Las mejores marcas para tu negocio</p>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="feature">
-                    <img src="./images/logos/lorenzo_di_pontti.png" alt="" width="100" height="85" class="logo">
-
-                    <div class="feature-content">
-                        <h4>Lorenzo Di Pontti</h4>
-                        <p>"Moda inclusiva para mujeres reales"</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="feature">
-                    <img src="./images/logos/logo_Dockers.png" alt="" width="135" height="85" class="logo">
-                    <div class="feature-content">
-                        <h4>Dockers</h4>
-                        <p>"Para cambiar el mundo, no se necesita un traje"</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="feature">
-                    <img src="./images/logos/logo_levis_kids.png" alt="" height="85" width="100" class="logo">
-                    <div class="feature-content">
-                        <h4>Levi’s kids</h4>
-                        <p>"La calidad nunca pasa de moda"</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo-carousel">
+                    <div class="carousel-track">
+                        <!-- TODAS LAS IMÁGENES CON ATRIBUTO ALT -->
+                        <img src="./images/logos/wados.png" class="logo" alt="Wados">
+                        <img src="./images/logos/lorenzodipontti.png" class="logo" alt="Lorenzo di Pontti">
+                        <img src="./images/logos/Dockers.png" class="logo" alt="Dockers">
+                        <img src="./images/logos/Lvk.png" class="logo" alt="Lvk">
+                        <img src="./images/logos/ferouch.png" class="logo" alt="Ferouch">
+                        <img src="./images/logos/CK.png" class="logo" alt="Calvin Klein">
+                        <img src="./images/logos/Discovery.png" class="logo" alt="Discovery">
+                        <img src="./images/logos/Levis.svg" class="logo" alt="Levis">
+                        <img src="./images/logos/Tommy.svg" class="logo" alt="Tommy Hilfiger">
+                        <!-- DUPLICADOS -->
+                        <img src="./images/logos/wados.png" class="logo" alt="Wados">
+                        <img src="./images/logos/lorenzodipontti.png" class="logo" alt="Lorenzo di Pontti">
+                        <img src="./images/logos/Dockers.png" class="logo" alt="Dockers">
+                        <img src="./images/logos/Lvk.png" class="logo" alt="Lvk">
+                        <img src="./images/logos/ferouch.png" class="logo" alt="Ferouch">
+                        <img src="./images/logos/CK.png" class="logo" alt="Calvin Klein">
+                        <img src="./images/logos/Discovery.png" class="logo" alt="Discovery">
+                        <img src="./images/logos/Levis.svg" class="logo" alt="Levis">
+                        <img src="./images/logos/Tommy.svg" class="logo" alt="Tommy Hilfiger">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- FIN FILA 1 -->
-
-        <!-- FILA 2 -->
-        <div class="row">
-           
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="feature">
-                    <img src="./images/logos/ferouch_logo.png" alt="" width="85" class="logo">
-                    <div class="feature-content">
-                        <h4>Ferrouch</h4>
-                        <p>"Flying Spirit"</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-     </div>
+    </div>
 </section>
-
         <!-- End Feature Section -->
+    <style>
+/* ============================================
+   CARRUSEL DE MARCAS - ESTILOS DIRECTOS
+   ============================================ */
+.logo-carousel {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    padding: 60px 0 !important;
+    background: linear-gradient(to bottom, #ffffff, #f5f5f5) !important;
+    border-radius: 20px !important;
+    position: relative !important;
     
+    /* Fade lateral */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent) !important;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent) !important;
+}
+
+.carousel-track {
+    display: flex !important;
+    align-items: center !important;
+    gap: 40px !important;
+    width: max-content !important;
+    animation: scrollInfinite 25s linear infinite !important;
+}
+
+@keyframes scrollInfinite {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.logo {
+    width: 180px !important;
+    height: 100px !important;
+    object-fit: contain !important;
+    flex-shrink: 0 !important;
+    transition: all 0.3s ease !important;
+    opacity: 0.85 !important;
+}
+
+.logo:hover {
+    opacity: 1 !important;
+    transform: scale(1.1) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .logo {
+        width: 120px !important;
+        height: 70px !important;
+    }
+    .carousel-track {
+        gap: 25px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 100px !important;
+        height: 60px !important;
+    }
+    .carousel-track {
+        gap: 20px !important;
+    }
+}
+</style>
+
+        
     
     <!-- Start Productos Section -->
         <section id="portfolio" class="portfolio-section-1">
@@ -297,7 +343,7 @@
                         <ul id="portfolio-list">
                            <li>
                                 <div class="portfolio-item">
-                                    <img src="images/PNG Wados/Blusa_wad.png" class="img-responsive" alt="" />
+                                    <img src="images/PNG Wados/Wados3.webp" class="img-responsive" alt="" />
 
                                     <div class="portfolio-caption">
                                         <img src="images/logos/logo-wados.jpeg" class="brand-logo" alt="">
@@ -323,7 +369,7 @@
                             <!-- Start DOCKERS items -->
                             <li>
                                 <div class="portfolio-item">
-                                    <img src="images/PNG Dockers/Jacket_dock.png" class="img-responsive" alt="" />
+                                    <img src="images/PNG Dockers/ChaquetaDockers.webp" class="img-responsive" alt="" />
                                     <div class="portfolio-caption">
                                        <img src="images/logos/logo_Dockers.png" class="brand-logo" alt="">
 
@@ -393,28 +439,28 @@
 
                 <div class="row">
                     <div class="col-md-6 producto-item">
-                    <img src="images/PNG Wados/Blusa_wad.png" class="img-responsive">
+                    <img src="images/PNG Wados/Wados1.webp" class="img-responsive">
                     </div>
                     <div class="col-md-6 producto-item">
-                    <img src="images/PNG Wados/Chaqueta_cuero_wad.png" class="img-responsive">
+                    <img src="images/PNG Wados/Wados3.webp" class="img-responsive">
                     </div>
                     <div class="col-md-6 producto-item">
-                    <img src="images/PNG Wados/DSC_0001.png" class="img-responsive">
+                    <img src="images/PNG Wados/Wados4.webp" class="img-responsive">
                     </div>
                     <div class="col-md-6 producto-item">
-                    <img src="images/PNG Wados/enterito_wad.png" class="img-responsive">
+                    <img src="images/PNG Wados/Wados.webp" class="img-responsive">
                     </div>
                     <div class="col-md-6">
-                    <img src="images/PNG Wados/Pants_wad.png" class="img-responsive">
+                  
                     </div>
                     <div class="col-md-6 producto-item">
-                    <img src="images/PNG Wados/parka_wad.png" class="img-responsive">
+                    
                     </div>
                     <div class="col-md-6 producto-item">
-                    <img src="images/PNG Wados/Vertido_tejido_wad.png" class="img-responsive">
+                   
                     </div>
                     <div class="col-md-6 producto-item">
-                    <img src="images/PNG Wados/Vestido_wad.png" class="img-responsive">
+                   
                     </div>
                 </div>
                 </div>
@@ -459,8 +505,12 @@
                 </div>
             </div>
             </div>
+
+
+
+
        <!-- Start MOdal 3  -->
-                    <div class="section-modal modal fade" id="modal-dockers" tabindex="-1">
+            <div class="section-modal modal fade" id="modal-dockers" tabindex="-1">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                 <div class="lr"><div class="rl"></div></div>
@@ -474,24 +524,28 @@
 
                 <div class="row">
                     <div class="col-md-6 producto-item">
-                    <img src="images/PNG Dockers/Camisa_dock.png" class="img-responsive">
+                    <img src="images/PNG Dockers/ChaquetaDockers.webp" class="img-responsive">
                     </div>
                     <div class="col-md-6 producto-item">
-                    <img src="images/PNG Dockers/denim_dock.png" class="img-responsive">
+                    <img src="images/PNG Dockers/ConjuntoDockers.webp" class="img-responsive">
                     </div>
                     <div class="col-md-6 producto-item">
-                    <img src="images/PNG Dockers/Jacket_dock.png" class="img-responsive">
+               
                     </div>
                     <div class="col-md-6 producto-item">
-                    <img src="images/PNG Dockers/Pants_wad.png" class="img-responsive">
+                
                     </div>
                     <div class="col-md-6 producto-item">
-                    <img src="images/PNG Dockers/poleron_dock.png" class="img-responsive">
+                   
                     </div>
                 </div>
                 </div>
             </div>
             </div>
+
+
+
+
 <!-- Start MOdal 4  -->
             <div class="section-modal modal fade" id="modal-levis-kid" tabindex="-1">
             <div class="modal-content">
@@ -843,10 +897,11 @@
                     <div class="footer-contact-info">
                         <h4>Información de Contacto</h4>
                         <ul>
-                            <li><strong>E-mail :</strong> email@mail.com</li>
-                            <li><strong>Teléfono :</strong> 322 6778776</li>
-                            <li><strong>Celular :</strong> +569 45565378</li>
-                            <li><strong>Sitio Web :</strong> Cflowers.com</li>
+                            <li><strong>E-mail :</strong> contacto.cflowers@gmail.com</li>
+                            <li><strong>Secursal :</strong> Serrano 240 </li>
+                            <li><strong>Comuna :</strong> Santiago </li>
+                            <li><strong>WhatsAap :</strong> +56974992570</li>
+                            <li><strong>Casa Matriz:</strong> Ahuma 370 Oficina 812</li>
                         </ul>
                     </div>
                 </div>
@@ -855,9 +910,9 @@
                     <div class="footer-contact-info">
                         <h4>Horario de Trabajo</h4>
                         <ul>
-                            <li><strong>Lunes a Miercoles :</strong> 09am a 17pm</li>
-                            <li><strong>Jueves a Viernes :</strong> 12pm a 22pm</li>
-                            <li><strong>Sabado :</strong> 09am a 16pm</li>
+                            <li><strong>Lunes a Miercoles :</strong> 09 am a 17 pm</li>
+                            <li><strong>Jueves a Viernes :</strong> 12 pm a 17 pm</li>
+                            <li><strong>Sabado :</strong> Cerrado</li>
                             <li><strong>Domingo :</strong> Cerrado</li>
                         </ul>
                     </div>
