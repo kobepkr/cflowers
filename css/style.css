@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Satisfy);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,400italic);
-@import url(http://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,400italic);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
  
 body {
     overflow-x: hidden;
@@ -190,8 +190,45 @@ li {
     
 }
 
+/* Mejora para navbar en móvil */
+@media (max-width: 768px) {
+    .navbar-default {
+        background-color: #222 !important;
+        padding: 10px 0 !important;
+    }
+    
+    .navbar-collapse {
+        background-color: #222;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    
+    .navbar-nav li {
+        text-align: center;
+    }
+    
+    .logo-chico {
+        margin: 5px auto;
+    }
+}
+/* Mejor responsive para portfolio */
+@media (max-width: 768px) {
+    .portfolio-item img {
+        height: 350px !important;
+    }
+    
+    #modal-dockers .producto-item img,
+    .section-modal .producto-item img {
+        height: 300px !important;
+        width: 90% !important;
+    }
+}
 
-
+@media (max-width: 480px) {
+    .portfolio-item img {
+        height: 250px !important;
+    }
+}
 
 
 
@@ -2147,7 +2184,7 @@ iframe {
 }
 
 /* ============================================
-   ELEGANT FOOTER - ESTILOS COMPLETOS
+   ELEGANT FOOTER - ACENTOS EN AZUL
    ============================================ */
 
 .elegant-footer {
@@ -2159,7 +2196,7 @@ iframe {
     margin-top: 0;
 }
 
-/* Borde superior decorativo */
+/* Borde superior decorativo en AZUL */
 .elegant-footer::before {
     content: '';
     position: absolute;
@@ -2167,7 +2204,7 @@ iframe {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #5BB12F, #28ABE3, #FF432E, #5BB12F);
+    background: linear-gradient(90deg, #28ABE3, #69D2E7, #1e6fa8, #28ABE3);
     background-size: 300% 100%;
     animation: gradientMove 3s ease infinite;
 }
@@ -2204,7 +2241,7 @@ iframe {
 
 .footer-contact-info-footer i {
     width: 25px;
-    color: #5BB12F;
+    color: #28ABE3;  /* AZUL */
     font-size: 14px;
 }
 
@@ -2228,7 +2265,7 @@ iframe {
     left: 0;
     width: 40px;
     height: 2px;
-    background: #5BB12F;
+    background: #28ABE3;  /* AZUL */
 }
 
 /* Enlaces rápidos */
@@ -2250,7 +2287,7 @@ iframe {
 }
 
 .footer-links li a:hover {
-    color: #5BB12F;
+    color: #28ABE3;  /* AZUL */
     transform: translateX(5px);
 }
 
@@ -2276,21 +2313,21 @@ iframe {
 /* Badge */
 .footer-badge {
     margin-top: 20px;
-    background: rgba(91, 177, 47, 0.15);
+    background: rgba(40, 171, 227, 0.15);  /* AZUL con opacidad */
     padding: 10px 15px;
     border-radius: 30px;
     display: inline-block;
 }
 
 .footer-badge i {
-    color: #5BB12F;
+    color: #28ABE3;  /* AZUL */
     margin-right: 8px;
 }
 
 .footer-badge span {
     font-size: 12px;
     font-weight: 500;
-    color: #5BB12F;
+    color: #28ABE3;  /* AZUL */
 }
 
 /* Newsletter */
@@ -2317,8 +2354,8 @@ iframe {
 }
 
 .newsletter-form .form-control:focus {
-    border-color: #5BB12F;
-    background: rgba(255, 255, 255, 0.15);
+    border-color: #28ABE3;  /* AZUL */
+    background: rgba(40, 171, 227, 0.1);
     outline: none;
     box-shadow: none;
 }
@@ -2328,7 +2365,7 @@ iframe {
 }
 
 .btn-subscribe {
-    background: #5BB12F;
+    background: #28ABE3;  /* AZUL */
     border: none;
     border-radius: 0 30px 30px 0;
     padding: 12px 18px;
@@ -2337,7 +2374,7 @@ iframe {
 }
 
 .btn-subscribe:hover {
-    background: #4a9a25;
+    background: #1e8bc3;  /* AZUL más oscuro */
     color: #fff;
 }
 
@@ -2368,7 +2405,7 @@ iframe {
 }
 
 .social-icons li a:hover {
-    background: #5BB12F;
+    background: #28ABE3;  /* AZUL */
     transform: translateY(-3px);
 }
 
@@ -2395,7 +2432,7 @@ iframe {
 }
 
 .footer-legal a:hover {
-    color: #5BB12F;
+    color: #28ABE3;  /* AZUL */
 }
 
 /* Responsive */
@@ -2447,4 +2484,38 @@ iframe {
         padding: 12px 15px;
     }
 }
+/* Justificar texto de la descripción en el footer */
+.footer-description {
+    text-align: justify;
+}
+/* ============================================
+   OPTIMIZACIONES DE RENDIMIENTO
+   ============================================ */
 
+/* Evita el reflow al cargar */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Acelera las animaciones */
+.portfolio-item img,
+.logo,
+.btn-primary {
+    will-change: transform;
+}
+
+/* Mejora el rendimiento de scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Previene el layout shift para imágenes sin dimensiones */
+img:not([width]) {
+    aspect-ratio: attr(width) / attr(height);
+}
+
+
+/* CSS MINIFICADO - Reemplaza secciones grandes */
+.elegant-footer{background:linear-gradient(135deg,#0a0a0a 0%,#1a1a1a 100%);color:#e0e0e0;padding:70px 0 0 0}.elegant-footer::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#28ABE3,#69D2E7,#1e6fa8,#28ABE3);background-size:300% 100%;animation:gradientMove 3s ease infinite}.footer-contact-info-footer i,.footer-title::after,.footer-links li a:hover,.footer-badge i,.footer-badge span,.btn-subscribe{color:#28ABE3}.btn-subscribe{background:#28ABE3}.btn-subscribe:hover{background:#1e8bc3}.social-icons li a:hover{background:#28ABE3}.footer-description{text-align:justify}@keyframes gradientMove{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
