@@ -3068,3 +3068,25 @@ html {
     
 
 }
+/* Tamaño específico para logo Levis en el carrusel */
+.carousel-track img.logo[alt="Levis"] {
+    height: 45px !important;
+    width: auto !important;
+    max-height: 45px !important;
+}
+/* Tamaño específico para logo reebok en el carrusel */
+.carousel-track img.logo[alt="Reebok"] {
+    height: 55px !important;
+    width: auto !important;
+    max-height: 55px !important;
+}
+/* Tamaño específico para logo champion en el carrusel */
+.carousel-track img.logo[alt="champion"] {
+    height: 95px !important;
+    width: auto !important;
+    max-height: 95px !important;
+}
+.dockers-item .portfolio-item img {
+    object-fit: contain !important;
+    background-color: #f0ece8 !important; /* color beige suave, ajusta si quieres */
+}
