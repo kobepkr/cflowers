@@ -2172,11 +2172,13 @@ iframe {
     border-radius: 10px;
 }
 .section-modal .producto-item img {
-    width: 70%;
-    height: 700px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
     margin-bottom: 20px;
     border-radius: 10px;
+  
 }
 
 .portfolio-caption .brand-logo {
