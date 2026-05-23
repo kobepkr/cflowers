@@ -3092,3 +3092,67 @@ html {
     object-fit: contain !important;
     background-color: #f0ece8 !important; /* color beige suave, ajusta si quieres */
 }
+
+/* ============================================
+   IGUALAR ALTURA DE IMÁGENES - IMAGEN COMPLETA
+   ============================================ */
+
+.latest-post img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;  /* Cambiado de cover a contain */
+    object-position: center center;
+    
+}
+
+/* Para tablet */
+@media (max-width: 991px) {
+    .latest-post img {
+        height: 220px;
+    }
+}
+
+/* Para móvil */
+@media (max-width: 768px) {
+    .latest-post img {
+        height: 200px;
+    }
+}
+
+/* Para móviles pequeños */
+@media (max-width: 480px) {
+    .latest-post img {
+        height: 180px;
+    }
+}
+
+/* ============================================
+   VIDEO LOCAL - MÁS LEJOS (COMPLETO)
+   ============================================ */
+
+.slider-video-wrapper {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+}
+
+.slider-video-local {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Muestra el video COMPLETO, se ve más lejos */
+    background-color: #000;
+}
+
+@media (max-width: 768px) {
+    .slider-video-wrapper {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-video-wrapper {
+        height: 250px;
+    }
+}
