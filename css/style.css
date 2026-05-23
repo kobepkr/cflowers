@@ -3127,7 +3127,7 @@ html {
 }
 
 /* ============================================
-   VIDEO LOCAL - MÁS LEJOS (COMPLETO)
+   VIDEO LOCAL - FONDO BLANCO
    ============================================ */
 
 .slider-video-wrapper {
@@ -3135,14 +3135,14 @@ html {
     height: 700px;
     overflow: hidden;
     position: relative;
-    background-color: #000;
+    background-color: #ffffff;  /* Cambiado a blanco */
 }
 
 .slider-video-local {
     width: 100%;
     height: 100%;
-    object-fit: contain;  /* Muestra el video COMPLETO, se ve más lejos */
-    background-color: #000;
+    object-fit: contain;
+    background-color: #ffffff;  /* Cambiado a blanco */
 }
 
 @media (max-width: 768px) {
