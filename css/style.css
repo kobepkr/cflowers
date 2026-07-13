@@ -3156,3 +3156,11 @@ html {
         height: 250px;
     }
 }
+
+/* Agrandar solo el logo de Comercial Caamaño */
+img.logo[alt="cliente"][src*="comercialCaamaño"] {
+    transform: scale(1.2);
+    /* O usa width/height en lugar de scale si prefieres: */
+    /* width: 150px !important; */
+    /* height: auto !important; */
+}
