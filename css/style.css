@@ -3164,3 +3164,62 @@ img.logo[alt="cliente"][src*="comercialCaamaño"] {
     /* width: 150px !important; */
     /* height: auto !important; */
 }
+.carousel-track img.logo[alt="Reebok"] {
+    height: 47px !important;
+    width: auto !important;
+    max-height: 47px !important;
+}
+
+/* Tamaño específico para logo New Era en el carrusel */
+.carousel-track img.logo[alt="new era"] {
+    height: 45px !important;
+    width: auto !important;
+    max-height: 49px !important;
+}
+/* Tamaño específico para logo New Era en el carrusel */
+.carousel-track img.logo[alt="Wados"] {
+    height: 37px !important;
+    width: auto !important;
+    max-height: 37px !important;
+}
+
+/* ============================================
+   CLIENTES - LOGOS MÁS GRANDES
+   ============================================ */
+
+/* Hacer los logos de clientes más grandes */
+#marcas .carousel-track .logo {
+    width: 220px !important;   /* Aumentado de 180px a 220px */
+    height: 130px !important;  /* Aumentado de 100px a 130px */
+    object-fit: contain !important;
+}
+
+/* Si quieres que algunos logos específicos sean aún más grandes */
+#marcas .carousel-track img.logo[alt="cliente"][src*="comercialCaamaño"] {
+    height: 150px !important;  /* Aumentado de 120px a 150px */
+    width: auto !important;
+}
+
+/* Para tablet */
+@media (max-width: 991px) {
+    #marcas .carousel-track .logo {
+        width: 170px !important;  /* Aumentado de 140px a 170px */
+        height: 100px !important; /* Aumentado de 80px a 100px */
+    }
+}
+
+/* Para móvil */
+@media (max-width: 768px) {
+    #marcas .carousel-track .logo {
+        width: 130px !important;  /* Aumentado de 110px a 130px */
+        height: 80px !important;  /* Aumentado de 65px a 80px */
+    }
+}
+
+/* Para móviles pequeños */
+@media (max-width: 480px) {
+    #marcas .carousel-track .logo {
+        width: 100px !important;  /* Aumentado de 80px a 100px */
+        height: 70px !important;  /* Aumentado de 55px a 70px */
+    }
+}
